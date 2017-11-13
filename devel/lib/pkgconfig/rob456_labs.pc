@@ -1,0 +1,8 @@
+prefix=/home/robert/catkin_ws/devel
+
+Name: rob456_labs
+Description: Description of rob456_labs
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robert/catkin_ws/devel/lib 
+Requires: 

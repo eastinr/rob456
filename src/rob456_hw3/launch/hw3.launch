@@ -1,0 +1,10 @@
+<launch>
+  <node pkg="stage_ros" type="stageros" name="simulator" args="$(find rob456_hw3)/worlds/manyDotsNoisyOdom.world"/>
+  <node pkg="rob456_hw3" type="hw3.py" name="lab3" output="screen" />
+
+  <node pkg="gmapping" type="slam_gmapping" name="slam">
+	<remap from="scan" to="base_scan"/>
+  </node>
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rob456_hw3)/classsetup.rviz"/>
+</launch>

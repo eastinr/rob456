@@ -1,0 +1,5 @@
+<launch>
+ <node pkg="stage_ros" type="stageros" name="stage_simulator" args="$(find stage_ros)/world/willow-erratic.world" output="screen"/>
+
+ <node pkg="rviz" type="rviz" name="visualizer" output="screen" args="-d $(find stage_ros)/rviz/stage.rviz"/>
+</launch>

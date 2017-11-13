@@ -1,0 +1,8 @@
+prefix=/home/robert/catkin_ws/devel
+
+Name: rob456_hw3
+Description: Description of rob456_hw3
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robert/catkin_ws/devel/lib 
+Requires: 
