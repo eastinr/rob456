@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if pgrep -x "roscore" > /dev/null
+then
+	echo"Roscore is already running!"
+else
+	gnome-terminal -e "roscore"
+fi
+sleep 5s
+
+if pgrep -x "rob456_project" > /dev/null
+then
+	echo"rob456_project is already running!"
+else
+	gnome-terminal -e "roslaunch rob456_project rob456_project.launch"
+fi
+sleep 10s
+
+if pgrep -x "nav_bundle" > /dev/null
+then
+	echo"nav_bundle is already running!"
+else
+	gnome-terminal -e "roslaunch nav_bundle nav_bundle.launch"
+fi
+sleep 15s
+
+
